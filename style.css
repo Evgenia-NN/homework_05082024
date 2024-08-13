@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 20px;
+}
+
+.grid-conteiner {
+    width: 980px;
+    display: grid;
+    gap: 10px;
+}
+
+.message-Anie {
+    display: grid;
+    grid-template-columns: 120px 70px auto; /* ширина аватара + ширина текста */
+    justify-content: start;
+}
+
+.message-Jack {
+    display: grid;
+    grid-template-columns: auto 70px 120px;
+    justify-content: end;
+}
+
+.message-Anie-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 156, 180);
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 15px;
+    width: 600px;
+}
+
+.message-Jack-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(156, 207, 255);
+    font-size: 1em;
+    padding: 1.3em;
+    text-align: center;
+    border-radius: 15px;
+    width: 600px;
+}
+
+.avatar-Anie {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+}
+
+.avatar-Jack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+
+.avatar-Anie-img {
+    border-radius: 50%;
+    width: 64px; /* ширина аватара */
+    height: 64px; /* высота аватара */
+    margin: 0.5em;
+}
+
+.avatar-Jack-img {
+    border-radius: 50%; /* делает аватар круглым */
+    width: 64px; /* ширина аватара */
+    height: 64px; /* высота аватара */
+    margin: 0.5em;
+}
+
+.time {
+    font-size: 0.8em;
+    color: gray;
+}
